@@ -153,6 +153,17 @@ const experience = {
       work: true,
       experiences: [
         {
+          title: "CEO",
+          company: "Matsya N",
+          company_url: "https://matsyan.co.in",
+          logo_path: "developerActivity.svg",
+          duration: "Mar 2024 – Present",
+          location: "",
+          description:
+            "Leading Matsya N as CEO — overseeing product strategy, technology development, and team operations. Driving innovation in marine-tech AI solutions.",
+          color: "#0077B5",
+        },
+        {
           title: "Software Dev Intern",
           company: "Blue Stocks",
           company_url: "",
