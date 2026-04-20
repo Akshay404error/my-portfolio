@@ -110,7 +110,7 @@ class Projects extends Component {
           {patents.data.map((patent, idx) => (
             <Fade key={idx} bottom duration={1500} distance="30px">
               <div className="patent-card">
-                <span className="patent-card-badge">Patent Pending</span>
+                <span className="patent-card-badge">Patent Published</span>
                 <h2>{patent.title}</h2>
                 <div className="patent-card-appno">App. No: {patent.applicationNo}</div>
                 <p>{patent.description}</p>

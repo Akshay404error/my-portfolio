@@ -285,8 +285,8 @@ const patents = {
       title: "Therom AI",
       applicationNo: "202541089346",
       description: "Automated logical proof validation using SAT solver with VS Code plugin integration and memory-safe engine.",
-      file: null,
-      type: null,
+      file: "patents/202541089346.pdf",
+      type: "pdf",
     },
     {
       title: "AI-Powered Test Case Generator",
