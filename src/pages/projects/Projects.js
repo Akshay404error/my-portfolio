@@ -12,6 +12,7 @@ import {
   publicationsHeader,
   publications,
   projects,
+  patents,
 } from "../../portfolio.js";
 import "./Projects.css";
 
@@ -91,9 +92,45 @@ class Projects extends Component {
         ) : null}
 
         <div className="repo-cards-div-main">
-          {publications.data.map((pub) => {
-            return <PublicationCard pub={pub} theme={theme} />;
+          {publications.data.map((pub, idx) => {
+            return <PublicationCard key={idx} pub={pub} theme={theme} />;
           })}
+        </div>
+
+        {/* Patents */}
+        <div className="basic-projects">
+          <Fade bottom duration={2000} distance="40px">
+            <div className="patents-section-heading">
+              <h1 style={{ color: theme.text }}>{patents.header.title}</h1>
+              <p style={{ color: theme.secondaryText }}>{patents.header.description}</p>
+            </div>
+          </Fade>
+        </div>
+        <div className="patents-grid">
+          {patents.data.map((patent, idx) => (
+            <Fade key={idx} bottom duration={1500} distance="30px">
+              <div className="patent-card">
+                <span className="patent-card-badge">Patent Pending</span>
+                <h2>{patent.title}</h2>
+                <div className="patent-card-appno">App. No: {patent.applicationNo}</div>
+                <p>{patent.description}</p>
+                <div className="patent-card-actions">
+                  {patent.file ? (
+                    <a
+                      className="patent-view-btn"
+                      href={patent.file}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {patent.type === "jpg" ? "View Patent Image" : "View Patent PDF"}
+                    </a>
+                  ) : (
+                    <span className="patent-no-file">Document coming soon</span>
+                  )}
+                </div>
+              </div>
+            </Fade>
+          ))}
         </div>
 
         <Footer theme={this.props.theme} onToggle={this.props.onToggle} />

@@ -261,6 +261,43 @@ const contactPageData = {
   },
 };
 
+const patents = {
+  header: {
+    title: "Patents",
+    description: "Patent-pending innovations filed with the Indian Patent Office, spanning AI, automation, and intelligent systems.",
+  },
+  data: [
+    {
+      title: "Geo-Referenced Fish Catch System",
+      applicationNo: "202541034285",
+      description: "Time-series forecasting integrated with Google Maps API for geo-referenced fish catch prediction and marine resource management.",
+      file: "patents/202541034285.pdf",
+      type: "pdf",
+    },
+    {
+      title: "Automation Hub",
+      applicationNo: "202541089343",
+      description: "Intelligent automation platform for web testing, scraping, and bot workflows with modular pipeline architecture.",
+      file: "patents/202541089343.pdf",
+      type: "pdf",
+    },
+    {
+      title: "Therom AI",
+      applicationNo: "202541089346",
+      description: "Automated logical proof validation using SAT solver with VS Code plugin integration and memory-safe engine.",
+      file: null,
+      type: null,
+    },
+    {
+      title: "AI-Powered Test Case Generator",
+      applicationNo: "202641013759",
+      description: "LLM-based automated test case generation from user stories, streamlining QA workflows in software development.",
+      file: "patents/202641013759.jpg",
+      type: "jpg",
+    },
+  ],
+};
+
 const competitiveSites = { competitiveSites: [] };
 const certifications = { certifications: [] };
 
@@ -340,4 +377,5 @@ export {
   publications,
   contactPageData,
   projects,
+  patents,
 };
